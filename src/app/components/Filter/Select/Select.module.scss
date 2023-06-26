@@ -1,0 +1,37 @@
+.select {
+  @include body_s;
+  display: flex;
+  flex-direction: column;
+  gap: $gap_xxs;
+  margin-top: $gap_s;
+  position: relative
+}
+
+.input {
+  @include input;
+  cursor: pointer;
+
+  .selectText.empty {
+    color: $Text_tertiary;
+  }
+
+  .btnInput {
+    width: 20px;
+    height: 20px;
+    background: url(/icons/arrow_light.svg);
+    background-position: center;
+    background-size: contain;
+  }
+  
+  &.open {
+    border-color: $Orange;
+
+    .selectText {
+      color: $Text_primary;
+    }
+    
+    .btnInput { 
+      transform: rotate(180deg);
+    }
+  }
+}

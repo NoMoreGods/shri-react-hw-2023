@@ -1,0 +1,17 @@
+.list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 360px;
+  padding: $gap_xs;
+  border-radius: $gap_xs;
+  background-color: $White;
+  box-shadow: $shadow_main;
+}
+
+.item {
+  @include body_s;
+  padding: 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: $gap_s;
+}
+.title {
+  @include title;
+  @include card;
+}

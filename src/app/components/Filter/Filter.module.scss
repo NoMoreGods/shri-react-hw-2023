@@ -1,0 +1,37 @@
+.filter {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 110px;
+  max-height: 862px;
+}
+
+.title {
+  @include text_s;
+  margin-bottom: 4px;
+}
+
+.form {
+  @include body_s;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.label {
+  margin: $gap_s 0 $gap_xxs;
+}
+
+.input {
+  @include input;
+
+  &::placeholder {
+    color: $Text_tertiary;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $Orange;
+  }
+}

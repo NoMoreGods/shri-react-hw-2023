@@ -1,0 +1,62 @@
+.page {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: $gap_m;
+}
+
+.card {
+  @include card;
+  display: flex;
+  gap: $gap_l;
+}
+
+.img {
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: $gap_xs;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $gap_m;
+}
+
+.title {
+  @include title;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: $gap_s;
+  margin-bottom: $gap_l;
+}
+
+.item {
+  display: flex;
+  gap: $gap_xs;
+  @include text_l;
+}
+
+.itemTitle {
+  font-weight: 600;
+}
+
+.discTitle {
+  @include text_xl_bold;
+  margin-bottom: $gap_s;
+}
+
+.disc {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: $gap_m;
+}

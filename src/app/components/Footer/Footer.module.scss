@@ -1,0 +1,17 @@
+.footer {
+  background-color: $Gray_1;
+  color: $White
+}
+
+.nav {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.linkBtn {
+  @include link_button(4px);
+}
